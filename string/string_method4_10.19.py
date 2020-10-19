@@ -49,3 +49,4 @@ print(result)
 # count() 求字符串里指定元素个数
 c = s.count(' ')
 print(c)
+s
