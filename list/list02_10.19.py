@@ -13,7 +13,7 @@ while i < l:
     if w in words[i]:
         del words[i]
         l -= 1
-        i -= 1  # 解决存在的问题 在列表删除一个元素时 下标也减一 或者写 continue
+        i -= 1  # 解决存在的问题 在列表删除一个元素时 下标也减一 或者写 continue：就是不执行 i += 1 这条语句 而直接跳到while循环处执行下一条循环
     i +=1
 
 print(words)
@@ -27,5 +27,7 @@ for word in words[::-1]:
     if w in word:
         del words[words.index(word)]
 print(words)
+
+
 
 
